@@ -529,10 +529,10 @@ RectTransform:
   m_Father: {fileID: 114004828}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -150}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &416737093
 MonoBehaviour:
@@ -577,7 +577,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 416737094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 640142960}
+        m_TargetAssemblyTypeName: CharecterControlScript, Assembly-CSharp
+        m_MethodName: BuiltStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &416737094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,8 +640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1321b408a71f3749b860770c51bf9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObject: {fileID: 11400000, guid: 15587ecfdb35ad547a9fcf8f80c60eea, type: 2}
-  text: {fileID: 593174045}
+  butontext: {fileID: 593174045}
+  target: {fileID: 11400000, guid: 15587ecfdb35ad547a9fcf8f80c60eea, type: 2}
 --- !u!1 &487098102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,10 +1274,10 @@ RectTransform:
   m_Father: {fileID: 114004828}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -250}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &937325510
 MonoBehaviour:
@@ -1310,7 +1322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 937325511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 640142960}
+        m_TargetAssemblyTypeName: CharecterControlScript, Assembly-CSharp
+        m_MethodName: BuiltStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &937325511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1361,8 +1385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1321b408a71f3749b860770c51bf9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObject: {fileID: 11400000, guid: b71db5eb444cbb0459a67b3bd6c0b1d5, type: 2}
-  text: {fileID: 1104036780}
+  butontext: {fileID: 1104036780}
+  target: {fileID: 11400000, guid: b71db5eb444cbb0459a67b3bd6c0b1d5, type: 2}
 --- !u!1 &1104036778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +1500,7 @@ MonoBehaviour:
   selectmat: {fileID: 2100000, guid: 7ba3a2c6bbcb6b24ea48f41b1da3f9df, type: 2}
   Mission: {fileID: 2053415201}
   selected: 0
+  dontwork: 1
 --- !u!4 &1499616215
 Transform:
   m_ObjectHideFlags: 0
@@ -1559,10 +1584,10 @@ RectTransform:
   m_Father: {fileID: 114004828}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -50}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1865560595
 MonoBehaviour:
@@ -1607,7 +1632,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865560596}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 640142960}
+        m_TargetAssemblyTypeName: CharecterControlScript, Assembly-CSharp
+        m_MethodName: BuiltStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1865560596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,8 +1695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1321b408a71f3749b860770c51bf9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObject: {fileID: 11400000, guid: 3d4d5303495550747aa952169601aca1, type: 2}
-  text: {fileID: 724968674}
+  butontext: {fileID: 724968674}
+  target: {fileID: 11400000, guid: 3d4d5303495550747aa952169601aca1, type: 2}
 --- !u!1 &1981725033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,10 +1851,10 @@ RectTransform:
   m_Father: {fileID: 114004828}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -350}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011798506
 MonoBehaviour:
@@ -1862,7 +1899,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2011798507}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 640142960}
+        m_TargetAssemblyTypeName: CharecterControlScript, Assembly-CSharp
+        m_MethodName: BuiltStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2011798507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,8 +1962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1321b408a71f3749b860770c51bf9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObject: {fileID: 11400000, guid: 5869fd964996a0840a159c2021c3bda8, type: 2}
-  text: {fileID: 675781328}
+  butontext: {fileID: 675781328}
+  target: {fileID: 11400000, guid: 5869fd964996a0840a159c2021c3bda8, type: 2}
 --- !u!1 &2053415201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,7 +1982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2053415202
 MonoBehaviour:
   m_ObjectHideFlags: 0

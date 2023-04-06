@@ -8,11 +8,8 @@ public class scriptableobject : ScriptableObject
     public float BuildingTimeHour;
     public float BuiltPrice;
     public GameObject Built;
-    ButtonScipt buton;
 
-    public Text buildresult;
-    
-    void Start()
+    public void buil(Text buildresult)
     {
         buildresult.text = "Price : " + BuiltPrice.ToString() + "\n Built Time : " + BuildingTimeHour.ToString();
     }

@@ -15,6 +15,7 @@ public class Selection : MonoBehaviour
 
     public GameObject Mission;
     public bool selected;
+    public bool dontwork=true;
 
     private void Update()
     {
@@ -51,7 +52,7 @@ public class Selection : MonoBehaviour
             if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray,out raycast))
             {
                 selection = raycast.transform;
-                if (selection.CompareTag("employee"))
+                if (selection.CompareTag("employee") && dontwork)
                 {
                     selection.GetComponentInChildren<Renderer>().material = selectmat;
                     Mission.SetActive(true);

@@ -10,24 +10,29 @@ public class CharecterControlScript : MonoBehaviour
     public GameObject targetDest;
     public Animator anim;
     Selection select;
+    bool playerwork;
     private void Start()
     {
         anim = GetComponent<Animator>();
         select =GameObject.FindGameObjectWithTag("Selection").gameObject.GetComponent<Selection>();
+        playerwork = true;
     }
 
     private void Update()
     {
-        if (this.select.selected==true)
+        if (playerwork==true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (this.select.selected == true)
             {
-                Ray ray = this.cam.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hitpoint;
-                if (Physics.Raycast(ray, out hitpoint))
+                if (Input.GetMouseButtonDown(0))
                 {
-                    this.targetDest.transform.position = hitpoint.point;
-                    this.player.SetDestination(hitpoint.point);
+                    Ray ray = this.cam.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hitpoint;
+                    if (Physics.Raycast(ray, out hitpoint))
+                    {
+                        this.targetDest.transform.position = hitpoint.point;
+                        this.player.SetDestination(hitpoint.point);
+                    }
                 }
             }
         }
@@ -40,5 +45,18 @@ public class CharecterControlScript : MonoBehaviour
         {
             this.anim.SetBool("Move", false);
         }
+    }
+    public void BuiltStart()
+    {
+        Debug.Log("inþa baþladý");
+        playerwork = false;
+        select.dontwork = false;
+        StartCoroutine(backwork());
+    }
+    IEnumerator backwork()
+    {
+        yield return new WaitForSeconds(5);
+        playerwork = true;
+        select.dontwork=true;
     }
 }
