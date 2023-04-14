@@ -13,10 +13,6 @@ public class Selection : MonoBehaviour
     private Transform selection;
     private RaycastHit raycast;
 
-    public GameObject Mission;
-    public bool selected;
-    public bool dontwork=true;
-
     private void Update()
     {
         if (highLight != null)
@@ -52,17 +48,13 @@ public class Selection : MonoBehaviour
             if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray,out raycast))
             {
                 selection = raycast.transform;
-                if (selection.CompareTag("employee") && dontwork)
+                if (selection.CompareTag("employee"))
                 {
                     selection.GetComponentInChildren<Renderer>().material = selectmat;
-                    Mission.SetActive(true);
-                    selected = true;
                 }
                 else
                 {
                     selection = null;
-                    Mission.SetActive(false);
-                    selected = false;
                 }
             }
         }

@@ -15,3 +15,5 @@ MonoBehaviour:
   BuildingTimeHour: 4
   BuiltPrice: 5
   Built: {fileID: 1022253000076213261, guid: 270aaa64c206ae7468a7a1f3e6ac37d9, type: 3}
+  buildInsate: {fileID: 4227447320086318612, guid: bd51634acd06e2d418a351de782d679c,
+    type: 3}
