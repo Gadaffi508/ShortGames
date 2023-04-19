@@ -12,21 +12,29 @@ public class CharecterControlScript : MonoBehaviour
     public GameObject targetDest;
     public Animator anim;
 
+    Selection selectionP;
+    public bool selected=false;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
+        selectionP = GameObject.FindGameObjectWithTag("Selection").gameObject.GetComponent<Selection>();
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (selectionP.selectPlayer==true)
         {
-            Ray ray = this.cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitpoint;
-            if (Physics.Raycast(ray, out hitpoint))
+            selected = true;
+            if (Input.GetMouseButtonDown(1))
             {
-                this.targetDest.transform.position = hitpoint.point;
-                this.player.SetDestination(hitpoint.point);
+                Ray ray = this.cam.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hitpoint;
+                if (Physics.Raycast(ray, out hitpoint))
+                {
+                    this.targetDest.transform.position = hitpoint.point;
+                    this.player.SetDestination(hitpoint.point);
+                }
             }
         }
 

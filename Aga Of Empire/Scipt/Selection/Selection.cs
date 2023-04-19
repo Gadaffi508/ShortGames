@@ -13,6 +13,8 @@ public class Selection : MonoBehaviour
     private Transform selection;
     private RaycastHit raycast;
 
+    public bool selectPlayer=false;
+
     private void Update()
     {
         if (highLight != null)
@@ -51,10 +53,12 @@ public class Selection : MonoBehaviour
                 if (selection.CompareTag("employee"))
                 {
                     selection.GetComponentInChildren<Renderer>().material = selectmat;
+                    selectPlayer = true;
                 }
                 else
                 {
                     selection = null;
+                    selectPlayer = false;
                 }
             }
         }

@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BuildingTimeHour: 1
   BuiltPrice: 5
-  Built: {fileID: 1022253000076213261, guid: 270aaa64c206ae7468a7a1f3e6ac37d9, type: 3}
+  Built: {fileID: 5201826940784916662, guid: 1c76a6f7b7379ac428af81be8c63cb61, type: 3}
   buildInsate: {fileID: 4227447320086318612, guid: bd51634acd06e2d418a351de782d679c,
     type: 3}
+  soldirandemplo: 1
+  soldir: {fileID: 8104732906183980041, guid: bb894662a1d751e44bb701be6339556a, type: 3}
+  emploo: {fileID: 8104732906183980041, guid: bb894662a1d751e44bb701be6339556a, type: 3}
