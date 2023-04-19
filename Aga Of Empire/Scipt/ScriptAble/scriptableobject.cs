@@ -22,22 +22,19 @@ public class scriptableobject : ScriptableObject
         _BuildingTimeHour = BuildingTimeHour;
         _BuiltPrice = BuiltPrice;
     }
-    public GameObject buildInst()
+    public GameObject buildInst(Vector3 transformVec)
     {
-        buildInsate.transform.position = new Vector3(buildInsate.transform.position.x+2, buildInsate.transform.position.y, buildInsate.transform.position.z+2);
-        return Instantiate(Built, buildInsate.transform.position, Quaternion.identity);
+        return Instantiate(Built, transformVec, Quaternion.identity);
     }
-    public bool InsateHuman()
+    public bool InsateHuman(Vector3 transformVec)
     {
         if (soldirandemplo==true)
         {
-            buildInsate.transform.position = new Vector3(buildInsate.transform.position.x - 2, buildInsate.transform.position.y, buildInsate.transform.position.z - 2);
-            return Instantiate(soldir, buildInsate.transform.position, Quaternion.identity);
+            return Instantiate(soldir, transformVec, Quaternion.identity);
         }
         else
         {
-            buildInsate.transform.position = new Vector3(buildInsate.transform.position.x - 2, buildInsate.transform.position.y, buildInsate.transform.position.z - 2);
-            return Instantiate(emploo, buildInsate.transform.position, Quaternion.identity);
+            return Instantiate(emploo, transformVec, Quaternion.identity);
         }
     }
 

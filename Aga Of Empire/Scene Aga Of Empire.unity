@@ -545,6 +545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   butontext: {fileID: 593174045}
   target: {fileID: 11400000, guid: 15587ecfdb35ad547a9fcf8f80c60eea, type: 2}
+  cam: {fileID: 1981725035}
 --- !u!1 &565592993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   butontext: {fileID: 1104036780}
   target: {fileID: 11400000, guid: b71db5eb444cbb0459a67b3bd6c0b1d5, type: 2}
+  cam: {fileID: 1981725035}
 --- !u!1 &999148240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,6 +1547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   butontext: {fileID: 724968674}
   target: {fileID: 11400000, guid: 3d4d5303495550747aa952169601aca1, type: 2}
+  cam: {fileID: 1981725035}
 --- !u!20 &1981725035 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 4654883982979385012, guid: aa90e1d3060acab47a1a1c82ef998ff0,
@@ -1700,6 +1703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   butontext: {fileID: 675781328}
   target: {fileID: 11400000, guid: 5869fd964996a0840a159c2021c3bda8, type: 2}
+  cam: {fileID: 1981725035}
 --- !u!1 &2053415201
 GameObject:
   m_ObjectHideFlags: 0
